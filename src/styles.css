@@ -1,12 +1,10 @@
 /* tailwindcss utility classes */
-@tailwind base;
+@tailwind base; 
 @tailwind components;
 @tailwind utilities;
 
-.btn{
-    @apply py-2 px-4 font-semibold;
-}
-
-.btn-green{
-    @apply rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700;
+@layer base{
+    a{
+        @apply text-blue-600 underline;
+    }
 }
