@@ -1,7 +1,15 @@
 /* tailwindcss utility classes */
 
-/* theme() */
+/* postcss.config.js */
 
-.content-area{
-  height: 0.625rem
+input::-moz-placeholder{
+  color: black;
+}
+
+input:-ms-input-placeholder{
+  color: black;
+}
+
+input::placeholder{
+  color: black;
 }

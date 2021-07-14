@@ -1,5 +1,8 @@
 /* tailwindcss utility classes */
 
 
-/* tailwind.config.js */
+/* postcss.config.js */
 
+input::placeholder{
+    color: black;
+}
