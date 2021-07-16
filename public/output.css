@@ -1,5 +1,6 @@
 /* tailwindcss utility classes */
 
-.content{
-  padding: 36rem
+.bg-content:visited {
+  --tw-text-opacity: 1;
+  color: rgba(248, 113, 113, var(--tw-text-opacity))
 }

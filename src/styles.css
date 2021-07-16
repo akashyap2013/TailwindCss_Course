@@ -1,5 +1,5 @@
 /* tailwindcss utility classes */
 
-.content{
-    @apply p-144
+.bg-content{
+    @apply visited:text-red-400
 }
