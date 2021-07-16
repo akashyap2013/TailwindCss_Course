@@ -1,5 +1,5 @@
 /* tailwindcss utility classes */
 
-.button{
-    @apply p-5;
+.content{
+    @apply p-144
 }
