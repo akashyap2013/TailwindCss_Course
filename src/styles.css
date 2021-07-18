@@ -1,5 +1,4 @@
 /* tailwindcss utility classes */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.preset{
+    @apply p-4.5;
+}
