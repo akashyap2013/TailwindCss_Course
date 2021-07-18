@@ -1,5 +1,5 @@
 /* tailwindcss utility classes */
 
-.new-btn{
-    @apply hover:scale-1 sm:rotate-1;
+.component{
+    @apply dt-btn;
 }

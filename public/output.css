@@ -1,12 +1,6 @@
 /* tailwindcss utility classes */
 
-.new-btn:hover {
-  transform: scale(1)
-}
-
-@media (min-width: 640px) {
-  .new-btn {
-    --tw-rotate: 1deg;
-    transform: rotate(1)
-  }
+.component{
+  padding: .5rem 1rem;
+  font-weight: 600;
 }

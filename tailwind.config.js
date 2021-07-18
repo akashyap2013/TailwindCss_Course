@@ -8,22 +8,26 @@ module.exports = {
     extend: {},
   },
   variants: {
+    customPlugin : ['responsive', 'hover'],
     extend: {
     },
   },
+  prefix : 'dt-',
   plugins: [
-    plugin(function ( { addUtilities }) {
-      const newUtilities = {
-        '.scale-1' : {
-          transform : 'scale(1)'
+    plugin(function ( { addComponents, variants }) {
+      const button = {  
+        '.btn' : {
+          padding : '.5rem 1rem',
+          fontWeight : '600'
         },
-        '.rotate-1' : {
-          transform : 'rotate(1)'
+        '.btn-blue' : {
+          color : '#fff',
+          '&:hover' : {
+            color : "#000"
+          }
         }
       }
-        addUtilities(newUtilities, {
-          variants : ['responsive', 'hover']
-        })
+      addComponents(button, variants('customPlugin'))
     })
   ],
 }
