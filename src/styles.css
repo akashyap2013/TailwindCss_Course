@@ -1,5 +1,5 @@
 /* tailwindcss utility classes */
 
-.bg-content{
-    @apply visited:text-red-400
+.new-btn{
+    @apply hover:scale-1 sm:rotate-1;
 }

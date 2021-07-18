@@ -1,6 +1,12 @@
 /* tailwindcss utility classes */
 
-.bg-content:visited {
-  --tw-text-opacity: 1;
-  color: rgba(248, 113, 113, var(--tw-text-opacity))
+.new-btn:hover {
+  transform: scale(1)
+}
+
+@media (min-width: 640px) {
+  .new-btn {
+    --tw-rotate: 1deg;
+    transform: rotate(1)
+  }
 }
