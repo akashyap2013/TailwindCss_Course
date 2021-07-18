@@ -1,5 +1,5 @@
 /* tailwindcss utility classes */
 
-.component{
-    @apply dt-btn;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

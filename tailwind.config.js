@@ -8,26 +8,18 @@ module.exports = {
     extend: {},
   },
   variants: {
-    customPlugin : ['responsive', 'hover'],
     extend: {
     },
   },
-  prefix : 'dt-',
   plugins: [
-    plugin(function ( { addComponents, variants }) {
-      const button = {  
-        '.btn' : {
-          padding : '.5rem 1rem',
-          fontWeight : '600'
-        },
-        '.btn-blue' : {
-          color : '#fff',
-          '&:hover' : {
-            color : "#000"
-          }
-        }
+    plugin(function ( { addBase, theme }) {
+      const heading = {
+        'h1' : { fontSize : theme('spacing.6')},
+        'h2' : { fontSize : theme('fontSize.xl') },
+        'h3' : { fontSize : theme('fontSize.lg') },
       }
-      addComponents(button, variants('customPlugin'))
+
+      addBase(heading)
     })
   ],
 }
